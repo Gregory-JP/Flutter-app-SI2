@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/Pages/home_page.dart';
+import 'package:hello_world/Routes/app_routes.dart';
+import 'Pages/pet_forms.dart';
+import 'Provider/pets_provider.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,60 +14,23 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Sistemas para Internet',
-      theme: ThemeData(
-        primarySwatch: Colors.green,
-      ),
-      home: const MyHomePage(title: 'Sistemas para Internet 2'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          widget.title,
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (context) => PetsProvider(),
         ),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'Clique até atingir a nota desejada na disciplina:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
+      ],
+      child: MaterialApp(
+        title: 'Pet App',
+        theme: ThemeData(
+          // primaryColor: Colors.green,
+          primarySwatch: Colors.green,
         ),
+        home: const HomePage(),
+        routes: {
+          AppRoutes.petForm: (_) => const PetForm(),
+        },
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
