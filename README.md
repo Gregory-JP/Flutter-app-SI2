@@ -9,7 +9,7 @@
 Integrantes do grupo: [Gregory Pitthan](https://github.com/Gregory-JP), [Jeferson Lopes](https://github.com/thelopesbr) e [Samuel Gomes](https://github.com/Saesel).
 
 
-## O que significa a sigla CRUD?
+## 🤔 O que significa a sigla CRUD?
 - Create (criar)
 - Read (ler)
 - Update (atualizar)
@@ -17,7 +17,7 @@ Integrantes do grupo: [Gregory Pitthan](https://github.com/Gregory-JP), [Jeferso
 
 
 
-## Vantagens do Flutter
+## 😄 Vantagens do Flutter
 
 O Flutter é uma plataforma de desenvolvimento de aplicativos móveis que permite criar aplicativos nativos para as plataformas Android e iOS a partir de um único código base. Algumas das principais vantagens do Flutter incluem:
 
@@ -31,7 +31,7 @@ O Flutter é uma plataforma de desenvolvimento de aplicativos móveis que permit
 
 - **Código único para várias plataformas:** como mencionado anteriormente, o Flutter permite que você crie aplicativos para Android e iOS a partir de um único código base. Isso pode economizar muito tempo e esforço no processo de desenvolvimento, especialmente se você precisar criar versões para ambas as plataformas.
 
-## Desvantagens do Flutter
+## 😐 Desvantagens do Flutter
 
 - **Aprendizado:** o Flutter é baseado em Dart, uma linguagem de programação relativamente nova e pouco conhecida. Isso pode significar que levará mais tempo para os desenvolvedores aprenderem a usar o Flutter e se tornarem proficientes nele.
 
@@ -43,7 +43,7 @@ O Flutter é uma plataforma de desenvolvimento de aplicativos móveis que permit
 
 - **Comunidade menor:** como uma plataforma relativamente nova, o Flutter ainda tem uma comunidade menor de desenvolvedores e uma base de usuários menor do que outras plataformas de desenvolvimento de aplicativos móveis, como o Android ou o iOS. Isso pode significar que há menos recursos e exemplos disponíveis para ajudar os desenvolvedores a resolver problemas ou aprender a usar o Flutter.
 
-## Como rodar o projeto?
+## 👨‍💻 Como rodar o projeto?
 Existem 2 formas para isso, usando o GIT ou baixando o projeto em um zip.
 
 No primeiro caso, você pode copiar o *link* do projeto e usar o comando `git clone` *link*.
